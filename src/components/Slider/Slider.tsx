@@ -14,7 +14,7 @@ export const Slider = () => {
 				</p>
 			</div>
 			<div className='absolute bottom-6 md:bottom-24'>
-				<Button className='text-sm bg-white w-16 h-8 md:w-20 md:h-10 md:text-base rounded-lg mr-4 active:scale-75 transition duration-300'>
+				<Button className='text-sm bg-[#e2dedb] w-16 h-8 md:w-20 md:h-10 md:text-base rounded-lg mr-4 active:scale-75 transition duration-300'>
 					Get Info
 				</Button>
 				<Button className='text-white text-sm w-16 h-8 md:w-20 md:h-10 md:text-base rounded-lg bg-[#627b9b] active:scale-75 transition duration-300'>
