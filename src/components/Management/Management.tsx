@@ -6,7 +6,7 @@ import { BriefCase } from "../Icons";
 export const Management = () => {
 	return (
 		<>
-			<p className='border border-[#627b9b] mx-12 md:mx-48'></p>
+			<p className='border-t border-[#627b9b] mx-12 md:mx-48'></p>
 			<div className='flex justify-center items-center flex-wrap'>
 				<div className='md:w-1/2 p-8 text-center order-2 md:order-1 md:text-left'>
 					<BriefCase />
@@ -19,7 +19,7 @@ export const Management = () => {
 					<Button className='my-2 text-sm md:text-base bg-[#627b9b] text-white p-2 rounded-lg active:scale-75 transition duration-300'>
 						Get Start
 					</Button>
-					<p className='border border-[#627b9b] md:w-4/5 my-8'></p>
+					<p className='border-t border-[#627b9b] md:w-4/5 my-8'></p>
 					<p className='text-[#627b9b] md:w-4/5 text-justify'>
 						"Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic omnis deserunt harum
 						inventore vero? Excepturi ut fuga temporibus distinctio velit esse iste quaerat consectetur
