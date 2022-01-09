@@ -6,3 +6,4 @@ export * from "./Chimistry";
 export * from "./Mathematics";
 export * from "./Earth";
 export * from "./Caculator";
+export * from "./BriefCase";

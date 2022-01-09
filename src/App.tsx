@@ -1,5 +1,5 @@
 import "./App.css";
-import { Achievements, NavBar, Slider } from "./components";
+import { Achievements, Management, NavBar, Slider } from "./components";
 
 function App() {
 	return (
@@ -7,6 +7,7 @@ function App() {
 			<NavBar />
 			<Slider />
 			<Achievements />
+			<Management />
 		</>
 	);
 }
