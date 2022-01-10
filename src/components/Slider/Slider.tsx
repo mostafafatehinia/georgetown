@@ -1,6 +1,6 @@
 import university from "../../images/Georgetown-University.jpg";
 import { Button } from "../Button";
-import { Description } from "./Description";
+import { Description } from "../Description";
 import { Title } from "./Title";
 export const Slider = () => {
 	return (
@@ -8,6 +8,7 @@ export const Slider = () => {
 			<img className='w-3/4 mt-8 md:w-2/3 rounded-2xl md:-mt-24' src={university} alt='Georgetown-University' />
 			<Title title='Georgetown University' />
 			<Description
+				className='absolute invisible text-center md:visible md:bottom-44 md:text-lg bg-white opacity-70 w-1/2 p-2 md:p-4 rounded-tl-2xl rounded-br-2xl font-medium'
 				content='Georgetown University is a private research university in the Georgetown neighborhood of Washington,
 				D.C.'
 			/>
