@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Button } from "../Button";
 import { Close, Hat, Menu } from "../Icons";
-import "./style.css";
+import "./navBar.css";
 
 export const NavBar = () => {
 	const menuRef = useRef<HTMLDivElement | null>(null);
@@ -16,52 +16,30 @@ export const NavBar = () => {
 	}
 
 	return (
-		<nav className='flex justify-between p-6 text-[#627b9b] h-20 md:h-52 bg-white'>
+		<nav className='nav'>
 			<div>
-				<Button className='pl-2 pr-2 pt-1 active:scale-110 transition duration-300'>
-					{!openMenu ? <Hat /> : ""}
-				</Button>
+				<Button className='hat'>{!openMenu ? <Hat /> : ""}</Button>
 			</div>
-			<div className='invisible md:visible'>
-				<Button className='p-2 border-2 border-white  active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg'>
-					Soulutions
-				</Button>
-				<Button className='p-2 border-2 border-white  active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg'>
-					Pricing
-				</Button>
-				<Button className='p-2 border-2 border-white  active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg'>
-					Partners
-				</Button>
-				<Button className='p-2 border-2 border-white  active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg'>
-					Company
-				</Button>
+			<div className='desktop-visiblity'>
+				<Button className='btn'>Soulutions</Button>
+				<Button className='btn'>Pricing</Button>
+				<Button className='btn'>Partners</Button>
+				<Button className='btn'>Company</Button>
 			</div>
-			<div className='invisible md:visible'>
-				<Button className='p-2 border-2 border-white  active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg'>
-					SignIn
-				</Button>
-				<Button className='p-2 ml-2 text-white bg-[#627b9b] active:scale-75 transition duration-300 rounded-lg'>
-					SignUp
-				</Button>
+			<div className='desktop-visiblity'>
+				<Button className='btn'>SignIn</Button>
+				<Button className='signup-btn'>SignUp</Button>
 			</div>
 			<div className='visible md:hidden'>
-				<Button onClick={handleMenu} className='active:scale-75 transition duration-300 pt-1'>
+				<Button onClick={handleMenu} className='menu'>
 					{openMenu ? <Close /> : <Menu />}
 				</Button>
 			</div>
-			<div className='hidden relative text-sm animate' ref={menuRef}>
-				<Button className=' absolute right-10 p-2 border-2 border-white active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg'>
-					Soulutions
-				</Button>
-				<Button className=' absolute right-32 p-2 border-2 border-white active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg'>
-					Pricing
-				</Button>
-				<Button className=' absolute right-72 p-2 border-2 border-white active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg'>
-					Partners
-				</Button>
-				<Button className=' absolute right-48 p-2 border-2 border-white active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg'>
-					Company
-				</Button>
+			<div className='hidden mobile-view' ref={menuRef}>
+				<Button className=' right-10 mobile-btn'>Soulutions</Button>
+				<Button className=' right-32 mobile-btn'>Pricing</Button>
+				<Button className=' right-72 mobile-btn'>Partners</Button>
+				<Button className=' right-48 mobile-btn'>Company</Button>
 			</div>
 		</nav>
 	);

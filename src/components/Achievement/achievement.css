@@ -1,0 +1,10 @@
+.achievement {
+	@apply flex items-center p-4 text-[#627b9b] hover:scale-110 transition duration-300;
+}
+.title {
+	@apply text-center text-2xl drop-shadow-lg font-bold mt-8  text-[#627b9b] mx-12 pt-4;
+}
+
+.achivements {
+	@apply flex flex-wrap capitalize justify-around my-4 px-16 text-sm font-bold md:text-xl;
+}

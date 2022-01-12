@@ -1,0 +1,22 @@
+.university-title {
+	@apply absolute w-1/2 text-center md:w-auto text-base bottom-20 md:bottom-72 md:text-xl md:font-semibold bg-white opacity-80 p-2 md:p-4 rounded-tr-2xl rounded-bl-2xl font-medium;
+}
+
+.slider {
+	@apply flex justify-center relative;
+}
+.slider img {
+	@apply w-3/4 mt-8 md:w-2/3 rounded-2xl md:-mt-24;
+}
+.description {
+	@apply absolute invisible text-center md:visible md:bottom-44 md:text-lg bg-white opacity-70 w-1/2 p-2 md:p-4 rounded-tl-2xl rounded-br-2xl font-medium;
+}
+.wrapper-btn {
+	@apply absolute bottom-6 md:bottom-24;
+}
+.info-btn {
+	@apply text-sm bg-[#e2dedb] w-16 h-8 md:w-20 md:h-10 md:text-base rounded-lg mr-4 active:scale-75 transition duration-300;
+}
+.about-btn {
+	@apply text-white text-sm w-16 h-8 md:w-20 md:h-10 md:text-base rounded-lg bg-[#627b9b] active:scale-75 transition duration-300;
+}

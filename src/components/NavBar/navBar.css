@@ -1,0 +1,37 @@
+@keyframes menuFrame {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.animate {
+	animation-name: menuFrame;
+	animation-duration: 1s;
+}
+.nav {
+	@apply flex justify-between p-6 text-[#627b9b] h-20 md:h-52 bg-white;
+}
+.hat {
+	@apply px-2 pt-1 active:scale-110 transition duration-300;
+}
+.desktop-visiblity {
+	@apply invisible md:visible;
+}
+.btn {
+	@apply p-2 border-2 border-white  active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg;
+}
+.signup-btn {
+	@apply p-2 ml-2 text-white bg-[#627b9b] active:scale-75 transition duration-300 rounded-lg;
+}
+.menu {
+	@apply active:scale-75 transition duration-300 pt-1;
+}
+.mobile-view {
+	@apply relative text-sm animate;
+}
+.mobile-btn {
+	@apply absolute p-2 border-2 border-white active:scale-75 active:border-[#627b9b] transition duration-300 rounded-lg;
+}

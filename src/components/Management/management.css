@@ -1,0 +1,30 @@
+.divider {
+	@apply border-t border-[#627b9b] mx-12 md:mx-48;
+}
+.wrapper {
+	@apply flex justify-center items-center flex-wrap;
+}
+.left-section {
+	@apply md:w-1/2 p-8 text-center order-2 md:order-1 md:text-left;
+}
+.title-mng {
+	@apply my-4 font-bold text-xl md:text-3xl;
+}
+.start-description {
+	@apply md:w-4/5 md:text-lg text-[#627b9b] text-justify;
+}
+.start-btn {
+	@apply my-2 text-sm md:text-base bg-[#627b9b] text-white p-2 rounded-lg active:scale-75 transition duration-300;
+}
+.left-section-divider {
+	@apply border-t border-[#627b9b] md:w-4/5 my-8;
+}
+.developer-description {
+	@apply text-[#627b9b] md:w-4/5 text-justify;
+}
+.right-section {
+	@apply w-2/3 my-8 md:w-1/2 order-1 md:order-2;
+}
+.right-section img {
+	@apply shadow-2xl rounded-lg md:rounded-l-xl md:rounded-r-none;
+}

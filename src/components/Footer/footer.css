@@ -1,0 +1,27 @@
+.footer {
+	@apply grid grid-cols-2 md:grid-cols-6 p-4 gap-x-12 gap-y-4 bg-[#627b9b] text-white;
+}
+.solution {
+	@apply grid gap-y-2 ml-6;
+}
+.col-title {
+	@apply text-gray-300 uppercase;
+}
+.support {
+	@apply grid gap-y-2;
+}
+.company {
+	@apply grid gap-y-2 ml-6 md:ml-0;
+}
+.legal {
+	@apply grid gap-y-2;
+}
+.subscribe {
+	@apply col-span-2 grid gap-y-2 ml-6 md:ml-0;
+}
+.email-input {
+	@apply w-2/3 rounded-md mr-2 px-1 border text-black border-gray-700 bg-gray-200;
+}
+.submit-btn {
+	@apply bg-[#e2dedb] text-[#627b9b] rounded-lg px-1 active:scale-75 transition duration-300;
+}
